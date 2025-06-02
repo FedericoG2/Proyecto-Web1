@@ -1,0 +1,209 @@
+/* Responsive */
+@media (max-width: 768px) {
+    .cabecera-principal {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .productos-destacados .contenedor-productos {
+        flex-direction: column;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}
+
+/* Fuente */
+@font-face {
+    font-family: "Noto";
+    src: url(fonts/Noto-Variable.ttf);
+    font-display: swap;
+}
+
+/* Modelo de caja alternativo */
+* {
+    box-sizing: border-box;
+}
+
+/* Reset de márgenes y paddings */
+body,
+h1,
+h2,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables y estilos base */
+:root {
+    line-height: 1.8rem;
+    font-size: 18px;
+    color: #333;
+    font-family: "Noto", sans-serif;
+    --verde: #3b5a39;
+    --gris-claro: #f5f5f5;
+    --gris: #ccc;
+}
+
+/* Estructura general */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cabecera-principal {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+}
+
+.cabecera-principal a img {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    margin: 0;
+}
+
+/* Navegación */
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacion li {
+    position: relative;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: var(--verde);
+    border-bottom: 2px solid var(--verde);
+}
+
+/* Contenido principal */
+.contenido-principal {
+    flex-grow: 1;
+    padding-bottom: 5%;
+}
+
+.contenido-principal .imagen-principal {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.seccion-index {
+    text-align: center;
+}
+
+.seccion-index h1 {
+    text-align: center;
+    margin: 5% 0;
+    color: var(--verde);
+}
+
+.seccion-index p {
+    padding: 15px;
+    background-color: var(--verde);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+/* Productos destacados */
+.productos-destacados {
+    padding: 0 10%;
+    margin-bottom: 3rem;
+}
+
+
+.productos-destacados h2 {
+    color: var(--verde);
+    text-align: center;
+    margin: 3rem 0 1rem;
+    /* Aumentamos margen superior */
+}
+
+
+.productos-destacados .contenedor-productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.producto {
+    flex: 1 1 30%;
+    border: 1px solid var(--gris);
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección novedades */
+.novedades {
+    padding: 1rem 10%;
+    background-color: #eaf4ea;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.novedades h2 {
+    color: var(--verde);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.pie-principal {
+    background-color: var(--gris-claro);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--gris);
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.pie-principal ul {
+    list-style: none;
+    text-align: center;
+}

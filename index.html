@@ -2,101 +2,77 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Juan Lambertucci & Cía - Maderas para construcción, carpintería y más. Calidad, experiencia y asesoramiento personalizado.">
-    <link rel="shortcut icon" href="recursos/img/logo.png" type="image/x-icon">
     <title>Juan Lambertucci & Cía</title>
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="productos.html">Productos</a> |
-            <a href="servicios.html">Servicios</a> |
-            <a href="ubicacion.html">Ubicación</a> |
-            <a href="contacto.html">Contacto</a> |
-            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    <header class="cabecera-principal">
+        <a href="#"><img src="recursos/img/logo.png" alt="Logo de la tienda" /></a>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            </ul>
         </nav>
-        <br>
-        <a href="index.html">
-            <img src="recursos/img/logo.png" alt="Logo de Juan Lambertucci & Cía" width="120">
-        </a>
-        <h1><u>Juan Lambertucci & Cía</u></h1>
-        <h2>Maderas para construcción, carpintería y herrajes.</h2>
-
-
     </header>
 
-    <main>
-        <img src="recursos/img/baner.avif" alt="Banner de TOUR" style="width: 100%; height: auto;">
 
-        <!-- Sección de Bienvenida -->
-        <section>
-            <h2>Bienvenidos</h2>
+    <main class="contenido-principal">
+        <img src="recursos/img/industria.webp" alt="Imagen principal" class="imagen-principal" />
+
+        <section class="seccion-index">
+            <h1>Bienvenidos a Nuestra Tienda</h1>
             <p>
                 Nos especializamos en ofrecer maderas de alta calidad para todos tus proyectos, desde construcciones
-                hasta trabajos de carpintería fina. Con años de experiencia en el rubro, te brindamos atención
-                personalizada, asesoramiento técnico y un amplio stock de productos para que encuentres exactamente lo
-                que necesitás.
+                hasta
+                trabajos de carpintería fina. Con años de experiencia en el rubro, te brindamos atención personalizada,
+                asesoramiento técnico y un amplio stock de productos para que encuentres exactamente lo que necesitás.
             </p>
         </section>
 
-        <!-- Sección de Productos Destacados -->
-        <section>
+        <section class="productos-destacados">
             <h2>Productos Destacados</h2>
-
-            <article>
-                <h3>Madera de Pino</h3>
-                <img src="recursos/img/pino.webp" alt="Madera de Pino" width="200">
-
-                <p>Madera versátil y económica, ideal para construcciones livianas y muebles.</p>
-            </article>
-
-            <article>
-                <h3>Madera de Eucalipto</h3>
-                <img src="recursos/img/eucalipto.webp" alt="Madera de Eucalipto" width="200">
-                <p>Fuerte y resistente, muy usada en estructuras y exteriores.</p>
-            </article>
-
-            <article>
-                <h3>Tablas Cepilladas</h3>
-                <img src="recursos/img/tabla_cepillada.webp" alt="Tablas Cepilladas" width="200">
-                <p>Listas para usar, perfectas para trabajos finos de carpintería.</p>
-            </article>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <h3>Producto 1</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="producto">
+                    <h3>Producto 2</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="producto">
+                    <h3>Producto 3</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Sección de Novedades -->
-        <section>
+        <section class="novedades">
             <h2>Novedades</h2>
-
-            <article>
-                <h3>¡Nuevo ingreso de madera dura!</h3>
-                <p>Ya disponible madera de quebracho y algarrobo para construcciones exigentes.</p>
-            </article>
-
-            <article>
-                <h3>Promoción de invierno</h3>
-                <p>Descuentos en tablas cepilladas durante todo julio. ¡Consultanos!</p>
-            </article>
-        </section>
-
-        <!-- Sección de Contacto Rápido -->
-        <section>
-            <h2>¿Tenés alguna consulta?</h2>
-            <p>Podés escribirnos a <a href="mailto:ejemplo@mail.com">ejemplo@mail.com</a> o visitar nuestra sección de
-                <a href="contacto.html">Contacto</a>.
+            <p>
+                Incorporamos nuevas líneas de productos sostenibles y herramientas para mejorar tu experiencia de
+                trabajo. ¡Mirá
+                nuestras últimas incorporaciones y promociones especiales!
             </p>
         </section>
     </main>
 
-    <footer>
-        <address>
-            WEB EN PROCESO 2025<br>
-            <a href="mailto:ejemplo@mail.com">ejemplo@mail.com</a>
-        </address>
+
+    <footer class="pie-principal">
+        <ul>
+            <li>&copy; 2025 Juan Lambertucci & Cía</li>
+            <li>Todos los derechos reservados</li>
+        </ul>
     </footer>
 </body>
 
