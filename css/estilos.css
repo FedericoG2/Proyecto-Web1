@@ -207,3 +207,33 @@ body {
     list-style: none;
     text-align: center;
 }
+
+/* Contacto **/
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-contacto input {
+    padding: 5px 10px;
+    font-size: inherit;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto textarea {
+    font-family: inherit;
+    font-size: inherit;
+    min-height: 250px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto button {
+    padding: 10px;
+    margin: 15px 0;
+    font-size: inherit;
+}
