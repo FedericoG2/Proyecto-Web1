@@ -26,60 +26,116 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contenido-principal">
+        <img src="recursos/img/industria.webp" alt="Imagen principal" class="imagen-principal" />
 
-        <div>
-            <h2>Machimbres</h2>
-            <img src="./recursos/img/Pmachimbre.jpg" alt="img-Machimbres" width="200">
-            <p>Tablas de madera machihembradas, ideales para revestimientos y pisos, brindan un acabado rústico y
-                cálido.</p>
-            <button>Consultar</button>
+        <section class="filtros">
+            <form class="filtros-form">
+                <div class="ordenadores">
+                    <label for="orden-nombre">Ordenar por nombre:</label>
+                    <select id="orden-nombre" name="orden-nombre">
+                        <option value="az">A - Z</option>
+                        <option value="za">Z - A</option>
+                    </select>
 
-        </div>
-        <br>
-        <hr>
-        <div>
-            <h2>Placas Mdf con melamina</h2>
-            <img src="./recursos/img/Pmdf.jpg" alt="img-Mdf" width="200">
-            <p>Tableros de MDF recubiertos con melamina, perfectos para muebles y decoración, resistentes y con variedad
-                de colores y texturas.</p>
-            <button>Consultar</button>
-        </div>
-        <br>
-        <hr>
-        <div>
-            <h2>Herrajes</h2>
-            <img src="./recursos/img/Pherrajes.avif" alt="img-Herrajes" width="200">
-            <p>Accesorios y componentes metálicos para ensamblar y reforzar muebles, garantizando durabilidad y
-                estabilidad.</p>
-            <button>Consultar</button>
-        </div>
-        <br>
-        <hr>
-        <div>
-            <h2>Placas Aglomeradas con Melamina</h2>
-            <img src="./recursos/img/Paglomerado.webp" alt="img-Aglomerado" width="200">
-            <p>Paneles de aglomerado recubiertos con melamina, económicos y versátiles para la fabricación de muebles y
-                estanterías.</p>
-            <button>Consultar</button>
-        </div>
-        <br>
-        <hr>
-        <div>
-            <h2>Tirantes para Techos </h2>
-            <img src="./recursos/img/Ptirantes.webp" alt="img-Tirantes" width="200">
-            <p>Maderas robustas y resistentes, ideales para estructuras de techos y soportes, aportando firmeza y
-                estabilidad.</p>
-            <button>Consultar</button>
-        </div>
-        <br>
-        <hr>
+                    <label for="orden-precio">Ordenar por precio:</label>
+                    <select id="orden-precio" name="orden-precio">
+                        <option value="menor">Menor a mayor</option>
+                        <option value="mayor">Mayor a menor</option>
+                    </select>
+                </div>
+
+                <div class="buscador">
+                    <input type="text" id="buscar" name="buscar" placeholder="Buscar productos..." />
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+
+
+        <section class="lista-productos">
+            <div class="producto-card">
+                <img src="recursos/img/producto1.jpg" alt="Producto 1">
+                <h3>Madera Pino</h3>
+                <p>$2500</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <!-- Repetir 11 veces más -->
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="recursos/img/producto2.jpg" alt="Producto 2">
+                <h3>Madera Cedro</h3>
+                <p>$3700</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <!-- ...hasta 12 -->
+        </section>
+
     </main>
-    <footer>
-        <address>
-            WEB EN PROCESO 2025<br>
-            <a href="mailto:ejemplo@mail.com">ejemplo@mail.com</a>
-        </address>
+    <footer class="pie-principal">
+        <ul>
+            <li>&copy; 2025 Juan Lambertucci & Cía</li>
+            <li>Todos los derechos reservados</li>
+        </ul>
     </footer>
 
 </body>
