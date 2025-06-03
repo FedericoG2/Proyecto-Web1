@@ -274,3 +274,42 @@ body {
     border: none;
     border-radius: 8px;
 }
+
+.contenido-nosotros {
+    padding: 3rem 10%;
+    background-color: #fff;
+}
+
+.contenido-nosotros h2 {
+    color: var(--verde);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.contenido-nosotros p,
+.contenido-nosotros ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.contenido-nosotros ul {
+    padding-left: 1.2rem;
+}
+
+.contenido-nosotros ul li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido-nosotros {
+        padding: 2rem 5%;
+    }
+
+    .contenido-nosotros h2 {
+        font-size: 1.5rem;
+    }
+}
