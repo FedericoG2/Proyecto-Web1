@@ -150,7 +150,7 @@ body {
     margin-top: 20px;
     /* espacio arriba del botón */
     padding: 0.5rem 1rem;
-    background-color: var(--verde);
+    background-color: #28a745;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -164,11 +164,7 @@ body {
     /* un verde más oscuro */
 }
 
-.btn-cta2:hover {
 
-    background-color: #2e7d32;
-    /* un verde más oscuro */
-}
 
 
 
@@ -255,23 +251,86 @@ body {
     /* Permitir salto de línea si es necesario */
 }
 
-/*Vision y Mision */
+/* Productos */
 
-.banner-chico {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.productos-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
 }
 
-.banner-chico img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+.productos-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
 }
+
+.productos-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn-descubrir-productos {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    /* texto blanco */
+    background-color: #28a745;
+    /* verde */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-descubrir-productos:hover {
+    background-color: #1e7e34;
+    /* verde más oscuro para hover */
+}
+
+
+
+/*Servicios*/
+
+
+.servicios-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.servicios-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.servicios-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn-saber-mas {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    /* texto blanco */
+    background-color: #28a745;
+    /* verde */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saber-mas:hover {
+    background-color: #1e7e34;
+    /* verde más oscuro para hover */
+}
+
+
 
 
 
@@ -310,6 +369,9 @@ body {
     font-size: 1.2em;
     margin: 10px 0;
 }
+
+
+
 
 
 /* Footer */
