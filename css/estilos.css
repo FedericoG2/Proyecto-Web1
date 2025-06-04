@@ -448,15 +448,11 @@ body {
 }
 
 .producto-card button {
-    background-color: var(--azul);
+    background-color: var(--verde);
+    /* usás tu variable verde */
     color: white;
     border: none;
     padding: 0.6rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.producto-card button:hover {
-    background-color: #005ca3;
 }
