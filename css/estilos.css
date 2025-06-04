@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 90px;
     padding: 0 10%;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(30px);
@@ -121,19 +121,25 @@ body {
 }
 
 .seccion-index {
+    max-width: 700px;
+    /* Ancho máximo razonable para lectura */
+    margin: 5% auto;
+    /* Margen arriba y abajo 5%, y centrado horizontal */
+    padding: 0 15px;
+    /* Un poco de padding horizontal para que no quede pegado */
     text-align: center;
 }
 
 .seccion-index h1 {
-    text-align: center;
-    margin: 5% 0;
+    margin: 0 0 1rem 0;
+    /* Margen inferior para separar del párrafo */
     color: var(--verde);
 }
 
 .seccion-index p {
     padding: 15px;
-    background-color: var(--verde);
-    color: #fff;
+    background-color: #f9f9f9;
+    color: var(--verde);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
