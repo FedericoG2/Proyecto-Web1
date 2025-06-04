@@ -398,13 +398,21 @@ body {
     background-color: #2f4d2e;
 }
 
-
 .lista-productos {
+    padding: 3rem 10%;
+    background-color: #fff;
+}
+
+.titulo-productos {
+    color: var(--verde);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.productos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    padding: 3rem 10%;
-    background-color: #fff;
 }
 
 .producto-card {
