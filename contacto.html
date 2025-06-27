@@ -46,21 +46,22 @@
             <h2 class="titulo-contacto">Formulario de contacto</h2>
 
             <!-- Formulario  -->
-            <form class="formulario-contacto" method="post" action="#">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" />
+         <form class="formulario-contacto" method="post" action="#">
+            <label for="nombre">Nombre <span aria-hidden="true" style="color: red;">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name" />
 
-                <label for="telefono">Teléfono</label>
-                <input type="number" id="telefono" name="telefono" />
+            <label for="telefono">Teléfono <span aria-hidden="true" style="color: red;">*</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+54 9 351 1234567" required autocomplete="tel" />
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
+            <label for="email">Email <span aria-hidden="true" style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required autocomplete="email" />
 
-                <label for="consulta">Consulta</label>
-                <textarea id="consulta" name="consulta"></textarea>
+            <label for="consulta">Consulta <span aria-hidden="true" style="color: red;">*</span></label>
+            <textarea id="consulta" name="consulta" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
+            <button type="submit">Enviar</button>
+         </form>
+
         </section>
     </main>
 

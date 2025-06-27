@@ -11,6 +11,8 @@
     <!--Icono -->
     <link rel="shortcut icon" href="recursos/img/logo.png" type="image/x-icon">
 
+    
+    <script type="module" src="./js/index-js.js"></script>   
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/estilos.css" />
 
@@ -22,11 +24,12 @@
     <!-- Encabezado  -->
     <header class="cabecera-principal">
 
-        <a href="index.html">
+      <a href="index.html">
             <img src="recursos/img/logo.png" alt="Logo de la tienda" />
         </a>
 
         <!-- Navegación principal -->
+       
         <nav class="navegacion">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -37,6 +40,7 @@
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <!--  Contenido principal -->
@@ -70,53 +74,11 @@
             </form>
         </section>
 
-        <!-- Sección de productos -->
-        <section class="lista-productos">
+
+        <section id="contenedor" class="lista-productos">
             <h1 class="titulo-productos">Productos</h1>
-
-            <!-- Contenedor de tarjetas,mas adelante hacemos un js con una estructura que haga de DB para llamar los datos y crear las tarjetas dinamicamente y no de forma estatica  -->
             <div class="productos-grid">
-
-                <div class="producto-card">
-                    <img src="recursos/img/tranquera.png" alt="Producto 1">
-                    <h3>TRANQUERAS</h3>
-                    <button class="btn-cta2">Consultar precio</button>
-                </div>
-
-
-                <div class="producto-card">
-                    <img src="recursos/img/sillas.png" alt="Producto 2">
-                    <h3>SILLAS</h3>
-                    <button class="btn-cta2">Consultar precio</button>
-                </div>
-
-
-                <div class="producto-card">
-                    <img src="recursos/img/mesa.png" alt="Producto 3">
-                    <h3>TABLONES</h3>
-                    <button class="btn-cta2">Consultar precio</button>
-                </div>
-
-
-                <div class="producto-card">
-                    <img src="recursos/img/mesada2.png" alt="Producto 4">
-                    <h3>MESADAS DE 1" Y 2"</h3>
-                    <button class="btn-cta2">Consultar precio</button>
-                </div>
-
-
-                <div class="producto-card">
-                    <img src="recursos/img/casita.png" alt="Producto 5">
-                    <h3>CASITAS PARA NIÑOS</h3>
-                    <button class="btn-cta2">Consultar precio</button>
-                </div>
-
-
-                <div class="producto-card">
-                    <img src="recursos/img/org2.png" alt="Producto 6">
-                    <h3>ORGANIZADOR</h3>
-                    <button class="btn-cta2">Consultar precio</button>
-                </div>
+                <!-- Aquí el JS va a insertar las tarjetas -->
             </div>
         </section>
     </main>
