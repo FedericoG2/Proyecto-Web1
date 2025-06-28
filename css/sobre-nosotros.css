@@ -1,0 +1,71 @@
+/*
+ * sobre-nosotros.css
+ * Este archivo contiene los estilos específicos de la página "Sobre Nosotros" (sobre-nosotros.html).
+ */
+
+.sobre-nosotros {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    /* Se mantiene Arial aquí, aunque Noto es la fuente principal */
+}
+
+.sobre-nosotros h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #145A32;
+    /* verde oscuro */
+    margin-bottom: 30px;
+}
+
+.sobre-nosotros p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* Nota: .icono se movió a main.css porque es una clase de utilidad general.
+   Si solo se usa aquí, podría moverse de vuelta a este archivo. */
+
+.contenido-nosotros {
+    padding: 3rem 10%;
+    background-color: #fff;
+}
+
+.contenido-nosotros h2 {
+    color: var(--verde);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.contenido-nosotros p,
+.contenido-nosotros ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.contenido-nosotros ul {
+    padding-left: 1.2rem;
+}
+
+.contenido-nosotros ul li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.boton-consultar {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    /* Los estilos de color y hover se comparten desde main.css */
+}

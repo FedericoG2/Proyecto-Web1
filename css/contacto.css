@@ -1,0 +1,87 @@
+/*
+ * contacto.css
+ * Este archivo contiene los estilos específicos de la página de contacto (contacto.html).
+ */
+
+.seccion-contacto {
+    padding-top: 60px;
+    /* Ajuste para el encabezado fijo */
+    max-width: 800px;
+    /* Añadido para centrar y limitar ancho del formulario */
+    margin: 0 auto 3rem;
+    /* Añadido para centrar y añadir margen inferior */
+    padding-left: 15px;
+    /* Añadido padding horizontal para móviles */
+    padding-right: 15px;
+    /* Añadido padding horizontal para móviles */
+}
+
+.titulo-contacto {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--verde);
+    /* Añadido color para el título */
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    /* Se mantuvo el max-width, pero el margin auto en .seccion-contacto ya centra */
+    margin: 0 auto;
+    /* Se dejó margin auto para el formulario dentro de la sección */
+    padding: 20px;
+    /* Añadido padding al formulario para mejor espaciado interno */
+    background-color: #fdfdfd;
+    /* Fondo ligero para el formulario */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.formulario-contacto label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px 12px;
+    /* Aumentado el padding para mejor usabilidad */
+    font-size: 1rem;
+    /* Asegura el tamaño de fuente consistente */
+    margin-bottom: 15px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: var(--verde);
+    box-shadow: 0 0 0 3px rgba(59, 90, 57, 0.2);
+    /* Sombra de enfoque */
+}
+
+.formulario-contacto textarea {
+    min-height: 150px;
+    /* Reducido la altura mínima para ser más flexible */
+    max-width: 100%;
+    resize: vertical;
+    /* Permite redimensionar solo verticalmente */
+}
+
+.formulario-contacto button {
+    padding: 12px 20px;
+    /* Aumentado el padding del botón */
+    margin-top: 15px;
+    font-size: 1.1rem;
+    /* Tamaño de fuente del botón */
+    font-weight: bold;
+    /* Negrita para el texto del botón */
+    /* Los estilos de color y hover se comparten desde main.css */
+}

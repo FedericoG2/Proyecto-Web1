@@ -1,0 +1,43 @@
+/*
+ * servicios.css
+ * Este archivo contiene los estilos específicos de la página de servicios (servicios.html).
+ */
+
+.proceso-trabajo {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proceso-trabajo h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333;
+}
+
+.proceso-trabajo ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.proceso-trabajo li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 18px;
+    color: #444;
+}
+
+.proceso-trabajo li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #28a745;
+    /* Verde específico para el checkmark */
+    font-weight: bold;
+}

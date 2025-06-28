@@ -1,0 +1,142 @@
+/*
+ * main.css
+ * Este archivo contiene los estilos globales y variables CSS
+ * que se comparten en todas las páginas del sitio web.
+ */
+
+/* Fuentes - Utilizado en todas las páginas */
+@font-face {
+    font-family: "Noto";
+    src: url(fonts/Noto-Variable.ttf);
+    font-display: swap;
+}
+
+/* Reset Básico - Utilizado en todas las páginas */
+* {
+    box-sizing: border-box;
+}
+
+/* Reset de Márgenes/Paddings - Utilizado en todas las páginas */
+body,
+h1,
+h2,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables CSS y Estilos Raíz - Utilizado en todas las páginas */
+:root {
+    line-height: 1.8rem;
+    font-size: 18px;
+    color: #333;
+    font-family: "Noto", sans-serif;
+    --verde: #3b5a39;
+    --gris-claro: #f5f5f5;
+    --gris: #ccc;
+}
+
+/* Estilos del Cuerpo General - Utilizado en todas las páginas */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Se cambió height a min-height para asegurar que el footer siempre esté abajo si el contenido es corto */
+}
+
+/* Contenido Principal Global - Utilizado en todas las páginas */
+.contenido-principal {
+    flex-grow: 1;
+    padding-bottom: 5%;
+    /* Ajuste global para dejar espacio sobre el footer */
+}
+
+/* Estilos para imágenes principales/banners - Utilizado en páginas que usan .imagen-principal */
+.contenido-principal .imagen-principal {
+    width: 100%;
+    height: 20%;
+    /* Considerar si un porcentaje es adecuado aquí, quizás un valor fijo como 200px o 300px es mejor para banners */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Botones de Call-to-Action (CTA) genéricos - Utilizado en index.html, productos.html, servicios.html */
+.btn-cta,
+.btn-descubrir-productos,
+.btn-saber-mas,
+.boton-consultar,
+.producto-card button,
+.buscador button,
+.formulario-contacto button {
+    /* Estilos base comunes para todos los botones que tienen fondo verde y texto blanco */
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para botones CTA genéricos */
+.btn-cta:hover,
+.btn-descubrir-productos:hover,
+.btn-saber-mas:hover,
+.boton-consultar:hover,
+.producto-card button:hover,
+.buscador button:hover,
+.formulario-contacto button:hover {
+    background-color: #2f4d2e;
+    /* Un verde más oscuro */
+}
+
+/* Ajustes específicos para los botones que ya tenían un color verde distinto */
+/* Nota: Si quieres que todos los botones usen el --verde definido en :root,
+         puedes eliminar las líneas `background-color: #28a745;` y `background-color: #1e7e34;`
+         en los archivos específicos. */
+.btn-cta {
+    background-color: #28a745;
+    /* Verde original del btn-cta */
+}
+
+.btn-cta:hover {
+    background-color: #2e7d32;
+    /* Hover original del btn-cta */
+}
+
+.btn-descubrir-productos {
+    background-color: #28a745;
+    /* Verde original del btn-descubrir-productos */
+}
+
+.btn-descubrir-productos:hover {
+    background-color: #1e7e34;
+    /* Hover original del btn-descubrir-productos */
+}
+
+.btn-saber-mas {
+    background-color: #28a745;
+    /* Verde original del btn-saber-mas */
+}
+
+.btn-saber-mas:hover {
+    background-color: #1e7e34;
+    /* Hover original del btn-saber-mas */
+}
+
+.boton-consultar {
+    background-color: var(--verde, #2a7a2a);
+    /* Usa --verde, con fallback */
+}
+
+.boton-consultar:hover {
+    background-color: #256b25;
+}
+
+/* Clases de utilidad */
+.icono {
+    /* Usado en sobre-nosotros.html */
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #000;
+}

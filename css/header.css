@@ -1,0 +1,51 @@
+/*
+ * header.css
+ * Este archivo contiene los estilos específicos del encabezado del sitio web.
+ * Utilizado en: todas las páginas (index.html, productos.html, servicios.html, etc.)
+ */
+
+.cabecera-principal {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    z-index: 1000;
+    /* Asegura que el header esté sobre otros elementos al hacer scroll */
+}
+
+.cabecera-principal a img {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    margin: 0;
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacion li {
+    position: relative;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: var(--verde);
+    border-bottom: 2px solid var(--verde);
+}
