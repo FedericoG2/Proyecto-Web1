@@ -7,7 +7,7 @@ export const productos = [
     {
         titulo: 'TRANQUERAS',
         imagen: 'recursos/img/tranquera.png',
-        botonTexto: 'COMPRAR'
+        botonTexto: 'Consultar precio'
     },
     {
         titulo: 'MESADAS DE 1" Y 2"',
@@ -39,9 +39,9 @@ export const productos = [
         imagen: 'recursos/img/org2.png',
         botonTexto: 'Consultar precio'
     },
-      {
+    {
         titulo: 'TRANQUERAS',
         imagen: 'recursos/img/tranquera.png',
-        botonTexto: 'COMPRAR'
+        botonTexto: 'Consultar precio'
     }
 ]
