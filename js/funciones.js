@@ -17,3 +17,20 @@ export function renderizarTienda(productosArray, contenedorElemento) {
     // Insertar el HTML acumulado en el contenedor
     contenedorElemento.innerHTML = htmlTotal;
 }
+
+export function buscarProductos(productosArray, textoBusqueda) {
+    const texto = textoBusqueda.trim().toLowerCase();
+    return productosArray.filter(p =>
+        p.titulo.toLowerCase().includes(texto)
+    );
+}
+
+export function filtrarYOrdenarProductos(lista, criterio) {
+    const copia = [...lista];
+    if (criterio === 'az') {
+        return copia.sort((a, b) => a.titulo.localeCompare(b.titulo));
+    } else if (criterio === 'za') {
+        return copia.sort((a, b) => b.titulo.localeCompare(a.titulo));
+    }
+    return copia;
+}

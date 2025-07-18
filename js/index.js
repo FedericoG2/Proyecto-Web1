@@ -1,7 +1,5 @@
-// 1 - Importar datos tienda
-// 2 - Importamos la función de renderizado
 import { productos } from "./productos.js";
-import { renderizarTienda } from './funciones.js';
+import { renderizarTienda, buscarProductos, filtrarYOrdenarProductos } from './funciones.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const pathname = window.location.pathname;
@@ -11,16 +9,42 @@ document.addEventListener('DOMContentLoaded', () => {
         if (contenedorDestacados) {
             const productosDestacados = productos.filter(p => p.destacado);
             renderizarTienda(productosDestacados, contenedorDestacados);
-        } else {
-            console.error("Error: Contenedor de productos destacados no encontrado.");
         }
 
     } else if (pathname.includes("productos")) {
         const contenedorTodos = document.querySelector('#contenedor .productos-grid');
         if (contenedorTodos) {
-            renderizarTienda(productos, contenedorTodos);
-        } else {
-            console.error("Error: Contenedor de todos los productos no encontrado.");
+            // Variable para almacenar la lista actual filtrada/ordenada
+            let productosFiltrados = [...productos];
+            renderizarTienda(productosFiltrados, contenedorTodos);
+
+            const inputBuscar = document.querySelector('#buscar');
+            const formBuscar = document.querySelector('.filtros-form');
+            const selectOrden = document.querySelector('#orden-nombre');
+
+            // Evento para búsqueda al enviar el formulario
+            if (formBuscar && inputBuscar) {
+                formBuscar.addEventListener('submit', e => {
+                    e.preventDefault(); // Evita que recargue la página
+                    const texto = inputBuscar.value.toLowerCase();
+                    productosFiltrados = buscarProductos(productos, texto);
+
+                    // Si hay selectOrden, ordenamos según valor actual
+                    if (selectOrden) {
+                        productosFiltrados = filtrarYOrdenarProductos(productosFiltrados, selectOrden.value);
+                    }
+
+                    renderizarTienda(productosFiltrados, contenedorTodos);
+                });
+            }
+
+            // Evento para ordenamiento al cambiar el select
+            if (selectOrden) {
+                selectOrden.addEventListener('change', () => {
+                    productosFiltrados = filtrarYOrdenarProductos(productosFiltrados, selectOrden.value);
+                    renderizarTienda(productosFiltrados, contenedorTodos);
+                });
+            }
         }
     }
 });
