@@ -4,7 +4,7 @@ import { renderizarTienda, buscarProductos, filtrarYOrdenarProductos } from './f
 document.addEventListener('DOMContentLoaded', () => {
     const pathname = window.location.pathname;
 
-    if (pathname.includes("index")) {
+    if (pathname === '/' || pathname.endsWith('index.html')) {
         const contenedorDestacados = document.querySelector('#contenedor1 .productos-grid');
         if (contenedorDestacados) {
             // Filtrar productos destacados y renderizarlos en el contenedor correspondiente
